@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon fontSet="fas" fontIcon="fa-video-camera"></mat-icon>
+  </button>
+  <span>MOVIES</span>
+  <button mat-stroked-button class="ml-1" (click)="onHomeClicked()">Home</button>
+  <button mat-stroked-button (click)="onWatchListClicked()">Watched List</button>
+  <span class="spacer"></span>
+  <button mat-stroked-button class="mr-2" (click)="onLoginClicked()">Login</button>
+  <button mat-stroked-button (click)="onRegisterClicked()">Register</button>
+</mat-toolbar>

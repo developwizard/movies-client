@@ -1,0 +1,21 @@
+mat-nav-list.list-horizontal {
+  padding: 0;
+}
+
+.horizontal-item {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
