@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {CarouselElement} from "../interfaces";
+import {Movie} from "../model/models";
 
 @Component({
   selector: 'app-carousel',
@@ -14,7 +14,7 @@ import {CarouselElement} from "../interfaces";
   ]
 })
 export class CarouselComponent implements OnInit {
-  @Input() images: CarouselElement[] = [];
+  @Input() movies: Movie[] = [];
   @Input() indicators: boolean = true;
   @Input() controls: boolean = true;
   @Input() autoSlide: boolean = false;
@@ -33,14 +33,14 @@ export class CarouselComponent implements OnInit {
 
   onPrevClick(): void {
     if (this.selectedIndex === 0) {
-      this.selectedIndex = this.images.length - 1;
+      this.selectedIndex = this.movies.length - 1;
     } else {
       this.selectedIndex--;
     }
   }
 
   onNextClick(): void {
-    if (this.selectedIndex === this.images.length - 1) {
+    if (this.selectedIndex === this.movies.length - 1) {
       this.selectedIndex = 0;
     } else {
       this.selectedIndex++;
