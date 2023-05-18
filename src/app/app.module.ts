@@ -4,6 +4,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {CarouselComponent} from './carousel/carousel.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -11,8 +12,9 @@ import {CarouselComponent} from './carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
+    CarouselComponent,
     FontAwesomeModule,
-    CarouselComponent
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
