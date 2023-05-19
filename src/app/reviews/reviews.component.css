@@ -1,7 +1,53 @@
 :host {
   height: 100%;
-  width: 100%;
   display: flex;
-  align-items: center;
-  margin: auto;
+  margin: 0 2rem;
+}
+
+.review-text-area {
+  width: 450px;
+  height: 150px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 1rem;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 25%;
+}
+
+.review-list {
+  padding-top: 0;
+}
+
+.review {
+  color: beige;
+}
+
+.divider {
+  background: beige;
+}
+
+.list-item {
+  border-bottom: 1px solid beige;
 }

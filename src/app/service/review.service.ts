@@ -15,8 +15,4 @@ export class ReviewService {
   addReview(review: Review): Observable<Review> {
     return this.http.post<Review>(this.baseUrl, review);
   }
-
-  getReviews(imdbId: string): Observable<Review[]> {
-    return this.http.get<Review[]>(`${this.baseUrl}/${imdbId}`);
-  }
 }

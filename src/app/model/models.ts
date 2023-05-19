@@ -7,7 +7,7 @@ export interface Movie {
   poster: string;
   genres: string[];
   backdrops: string[];
-  reviewIds: string[];
+  reviewIds: Review[];
 }
 
 export interface Review {
