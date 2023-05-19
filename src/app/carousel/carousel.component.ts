@@ -67,4 +67,8 @@ export class CarouselComponent implements OnInit {
   playTrailer() {
     this.router.navigate(['/trailer', this.movies[this.selectedIndex].imdbId]);
   }
+
+  onReviewsClicked() {
+    this.router.navigate(['/reviews', this.movies[this.selectedIndex].imdbId]);
+  }
 }

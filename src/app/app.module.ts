@@ -9,6 +9,7 @@ import {HeaderComponent} from './header/header.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TrailerComponent} from './trailer/trailer.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {ReviewsComponent} from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {AppRoutingModule} from "./app-routing.module";
     FontAwesomeModule,
     HeaderComponent,
     HttpClientModule,
+    ReviewsComponent,
     TrailerComponent
   ],
   providers: [],

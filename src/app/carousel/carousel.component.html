@@ -19,6 +19,7 @@
         <button mat-icon-button class="play-button" [disableRipple]="true" (click)="playTrailer()">
           <mat-icon class="play-button-icon" fontSet="fas" fontIcon="fa-circle-play"></mat-icon>
         </button>
+        <button mat-raised-button color="accent" class="ml-2 mr-2" (click)="onReviewsClicked()">Reviews</button>
       </div>
     </div>
     <div *ngIf="indicators" class="carousel-dot-container">
