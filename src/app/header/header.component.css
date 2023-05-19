@@ -12,8 +12,22 @@ mat-nav-list.list-horizontal {
   flex: 1 1 auto;
 }
 
+.toolbar-header {
+  background-color: #505050;
+  color:gold;
+}
+
+.header-icon,
+.header-text {
+  color:gold;
+}
+
 .ml-1 {
   margin-left: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 1rem;
 }
 
 .mr-2 {
