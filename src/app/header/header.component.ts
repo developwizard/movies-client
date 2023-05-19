@@ -3,6 +3,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatListModule} from "@angular/material/list";
 import {MatIconModule} from "@angular/material/icon";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -18,8 +19,11 @@ import {MatIconModule} from "@angular/material/icon";
 })
 export class HeaderComponent {
 
-  onHomeClicked(): void {
+  constructor(private router: Router) {
+  }
 
+  onHomeClicked(): void {
+    this.router.navigate(['/']);
   }
 
   onWatchListClicked(): void {

@@ -4,6 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {Movie} from "../model/models";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
+import {ActivatedRoute, Data, Router} from "@angular/router";
 
 @Component({
   selector: 'app-carousel',
@@ -18,17 +19,23 @@ import {MatButtonModule} from "@angular/material/button";
   ]
 })
 export class CarouselComponent implements OnInit {
-  @Input() movies: Movie[] = [];
+  movies: Movie[] = [];
   @Input() indicators: boolean = true;
   @Input() controls: boolean = true;
   @Input() autoSlide: boolean = false;
   @Input() slideInterval = 3000;
   selectedIndex: number = 0;
 
+  constructor(private router: Router, private route: ActivatedRoute) {
+  }
+
   ngOnInit(): void {
     if (this.autoSlide) {
       this.autoSlideImages();
     }
+    this.route.data.subscribe((data: Data) => {
+      this.movies = data['movies'];
+    });
   }
 
   selectCarouselElement(i: number): void {
@@ -55,5 +62,9 @@ export class CarouselComponent implements OnInit {
     setInterval(() => {
       this.onNextClick();
     }, this.slideInterval);
+  }
+
+  playTrailer() {
+    this.router.navigate(['/trailer', this.movies[this.selectedIndex].imdbId]);
   }
 }

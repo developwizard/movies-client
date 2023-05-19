@@ -16,7 +16,7 @@
         <h4>{{movie.title}}</h4>
       </div>
       <div class="movie-buttons-container">
-        <button mat-icon-button class="play-button" [disableRipple]="true">
+        <button mat-icon-button class="play-button" [disableRipple]="true" (click)="playTrailer()">
           <mat-icon class="play-button-icon" fontSet="fas" fontIcon="fa-circle-play"></mat-icon>
         </button>
       </div>
