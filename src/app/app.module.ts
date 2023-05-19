@@ -7,6 +7,7 @@ import {CarouselComponent} from './carousel/carousel.component';
 import {HttpClientModule} from "@angular/common/http";
 import {HeaderComponent} from './header/header.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TrailerComponent} from './trailer/trailer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     CarouselComponent,
     FontAwesomeModule,
     HeaderComponent,
-    HttpClientModule
+    HttpClientModule,
+    TrailerComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

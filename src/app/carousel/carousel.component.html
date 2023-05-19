@@ -15,7 +15,11 @@
            [ngClass]="{'active': selectedIndex === i}">
         <h4>{{movie.title}}</h4>
       </div>
-
+      <div class="movie-buttons-container">
+        <button mat-icon-button class="play-button" [disableRipple]="true">
+          <mat-icon class="play-button-icon" fontSet="fas" fontIcon="fa-circle-play"></mat-icon>
+        </button>
+      </div>
     </div>
     <div *ngIf="indicators" class="carousel-dot-container">
         <span *ngFor="let dot of movies; let i = index"

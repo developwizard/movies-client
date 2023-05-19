@@ -76,6 +76,34 @@
   opacity: 0.5;
 }
 
+.movie-buttons-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:300px;
+}
+.play-button {
+  width: auto;
+  height: auto;
+}
+
+.play-button-icon-container{
+  padding:0;
+  margin:0;
+  width:150px;
+}
+
+.play-button-icon{
+  padding:0;
+  margin:0;
+  color:gold;
+  font-size: 3rem;
+  transition: 0.3s;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+}
+
 .active,
 .dot:hover {
   opacity: 1;

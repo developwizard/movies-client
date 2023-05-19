@@ -2,6 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {Movie} from "../model/models";
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
 
 @Component({
   selector: 'app-carousel',
@@ -10,7 +12,9 @@ import {Movie} from "../model/models";
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class CarouselComponent implements OnInit {
